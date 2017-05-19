@@ -26,6 +26,9 @@ class SiteController extends Controller
         $this->data['anosatividade'] = $configs->where('parametro', 'anosatividade')->first();
         $this->data['premios'] = $configs->where('parametro', 'premios')->first();
         $this->data['historiassucesso'] = $configs->where('parametro', 'historiassucesso')->first();
+        $this->data['areaatuacao'] = $configs->where('parametro', 'areaatuacao')->all();
+        $this->data['depoimento'] = $configs->where('parametro', 'depoimento')->all();
+        $this->data['advogado'] = $configs->where('parametro', 'advogado')->all();
 
     }
 

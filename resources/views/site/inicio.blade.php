@@ -198,89 +198,30 @@
             </div>
         </div>
 
+
+
         <div class="row mt-lg">
+            @foreach($data['areaatuacao'] as $area)
             <div class="col-md-4">
                 <div class="feature-box feature-box-style-2 mb-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
                     <div class="feature-box-icon">
                         <img src="{{ asset('img/demos/law-firm/icons/criminal-law.png') }}" alt="" />
                     </div>
                     <div class="feature-box-info ml-md">
-                        <h4 class="mb-sm">Criminal Law</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
+                        <h4 class="mb-sm">{{ $area->extra }}</h4>
+                        <p>{{ $area->valor }}</p>
                         <a class="mt-md" href="demo-law-firm-practice-areas-detail.html">Learn More <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="feature-box feature-box-style-2 mb-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
-                    <div class="feature-box-icon">
-                        <img src="{{ asset('img/demos/law-firm/icons/business-law.png') }}" alt="" />
-                    </div>
-                    <div class="feature-box-info ml-md">
-                        <h4 class="mb-sm">Business Law</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
-                        <a class="mt-md" href="demo-law-firm-practice-areas-detail.html">Learn More <i class="fa fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-box feature-box-style-2 mb-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
-                    <div class="feature-box-icon">
-                        <img src="{{ asset('img/demos/law-firm/icons/health-law.png') }}" alt="" />
-                    </div>
-                    <div class="feature-box-info ml-md">
-                        <h4 class="mb-sm">Health Law</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
-                        <a class="mt-md" href="demo-law-firm-practice-areas-detail.html">Learn More <i class="fa fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row mt-md mb-xl">
-            <div class="col-md-4">
-                <div class="feature-box feature-box-style-2 mb-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-                    <div class="feature-box-icon">
-                        <img src="{{ asset('img/demos/law-firm/icons/divorce-law.png') }}" alt="" />
-                    </div>
-                    <div class="feature-box-info ml-md">
-                        <h4 class="mb-sm">Divorce Law</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing metus elit. Quisque rutrum pellentesque imperdiet.</p>
-                        <a class="mt-md" href="demo-law-firm-practice-areas-detail.html">Learn More <i class="fa fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-box feature-box-style-2 mb-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-                    <div class="feature-box-icon">
-                        <img src="{{ asset('img/demos/law-firm/icons/capital-law.png') }}" alt="" />
-                    </div>
-                    <div class="feature-box-info ml-md">
-                        <h4 class="mb-sm">Capital Law</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
-                        <a class="mt-md" href="demo-law-firm-practice-areas-detail.html">Learn More <i class="fa fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-box feature-box-style-2 mb-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-                    <div class="feature-box-icon">
-                        <img src="{{ asset('img/demos/law-firm/icons/accident-law.png') }}" alt="" />
-                    </div>
-                    <div class="feature-box-info ml-md">
-                        <h4 class="mb-sm">Accident Law</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla.</p>
-                        <a class="mt-md" href="demo-law-firm-practice-areas-detail.html">Learn More <i class="fa fa-long-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 p-none">
-                <section class="section section-primary match-height mt-xl" style="background-image: url({{ asset('img/patterns/fancy.jpg') }});">
+                <section class="section section-primary match-height mt-xl" style="background-image: url({{ asset('img/patterns/wild_oliva.jpg') }});">
                     <div class="row">
                         <div class="col-half-section col-half-section-right">
                             <h2 class="mb-none">Depoimentos</h2>
@@ -289,45 +230,23 @@
                             </div>
 
                             <div class="owl-carousel owl-theme" data-plugin-options="{'items': 1, 'margin': 10, 'loop': false, 'nav': false, 'dots': true}">
+
+                                @foreach($data['depoimento'] as $depoimento)
                                 <div>
                                     <div class="testimonial testimonial-style-3 testimonial-trasnparent-background testimonial-alternarive-font">
                                         <blockquote>
-                                            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper, eget sagittis velit venenatis.</p>
+                                            <p class="text-light">{{ $depoimento->valor }}</p>
                                         </blockquote>
                                         <div class="testimonial-author">
                                             <div class="testimonial-author-thumbnail">
                                                 <img src="{{ asset('img/clients/client-1.jpg') }}" class="img-responsive img-circle" alt="">
                                             </div>
-                                            <p><strong>John Smith</strong><span class="text-light">CEO & Founder - Okler</span></p>
+                                            <p><strong>{{ $depoimento->extra }}</strong><span class="text-light">{{ $depoimento->obs }}</span></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="testimonial testimonial-style-3 testimonial-trasnparent-background testimonial-alternarive-font">
-                                        <blockquote>
-                                            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet.</p>
-                                        </blockquote>
-                                        <div class="testimonial-author">
-                                            <div class="testimonial-author-thumbnail">
-                                                <img src="{{ asset('img/clients/client-2.jpg') }}" class="img-responsive img-circle" alt="">
-                                            </div>
-                                            <p><strong>Jessica Smith</strong><span class="text-light">Marketing - Okler</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="testimonial testimonial-style-3 testimonial-trasnparent-background testimonial-alternarive-font">
-                                        <blockquote>
-                                            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper, eget sagittis velit venenatis.</p>
-                                        </blockquote>
-                                        <div class="testimonial-author">
-                                            <div class="testimonial-author-thumbnail">
-                                                <img src="{{ asset('img/clients/client-3.jpg') }}" class="img-responsive img-circle" alt="">
-                                            </div>
-                                            <p><strong>Bob Smith</strong><span class="text-light">COO - Okler</span></p>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
+
                             </div>
 
                         </div>
@@ -351,71 +270,22 @@
             </div>
             <div class="row mt-lg">
                 <div class="owl-carousel owl-theme owl-team-custom show-nav-title" data-plugin-options="{'items': 4, 'margin': 10, 'loop': false, 'nav': true, 'dots': false}">
+
+                    @foreach($data['advogado'] as $advogado)
+
                     <div class="center mb-lg">
                         <a href="demo-law-firm-attorneys-detail.html">
                             <img src="{{ asset('img/team/team-22.jpg') }}" class="img-responsive" alt="">
                         </a>
-                        <h4 class="mt-md mb-none">David Doe</h4>
-                        <p class="mb-none">Criminal Law</p>
+                        <h4 class="mt-md mb-none">{{ $advogado->valor }}</h4>
+                        <p class="mb-none">{{ $advogado->extra }}</p>
                         <span class="thumb-info-social-icons mt-sm pb-none">
-										<a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a>
-										<a href="http://www.twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-										<a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
-                                </span>
+                            <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+                            <a href="http://www.twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+                            <a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
+                        </span>
                     </div>
-                    <div class="center mb-lg">
-                        <a href="demo-law-firm-attorneys-detail.html">
-                            <img src="{{ asset('img/team/team-23.jpg') }}" class="img-responsive" alt="">
-                        </a>
-                        <h4 class="mt-md mb-none">Jeff Doe</h4>
-                        <p class="mb-none">Business Law</p>
-                        <span class="thumb-info-social-icons mt-sm pb-none">
-										<a href="mailto:mail@example.com"><i class="fa fa-envelope"></i><span>Email</span></a>
-										<a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
-                                </span>
-                    </div>
-                    <div class="center mb-lg">
-                        <a href="demo-law-firm-attorneys-detail.html">
-                            <img src="{{ asset('img/team/team-24.jpg') }}" class="img-responsive" alt="">
-                        </a>
-                        <h4 class="mt-md mb-none">Craig Doe</h4>
-                        <p class="mb-none">Divorce Law</p>
-                        <span class="thumb-info-social-icons mt-sm pb-none">
-										<a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a>
-										<a href="http://www.twitter.com"><i class="fa fa-twitter"></i><span>Twitter</span></a>
-										<a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
-                                </span>
-                    </div>
-                    <div class="center mb-lg">
-                        <a href="demo-law-firm-attorneys-detail.html">
-                            <img src="{{ asset('img/team/team-25.jpg') }}" class="img-responsive" alt="">
-                        </a>
-                        <h4 class="mt-md mb-none">Richard Doe</h4>
-                        <p class="mb-none">Accident Law</p>
-                        <span class="thumb-info-social-icons mt-sm pb-none">
-										<a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
-                                </span>
-                    </div>
-                    <div class="center mb-lg">
-                        <a href="demo-law-firm-attorneys-detail.html">
-                            <img src="{{ asset('img/team/team-29.jpg') }}" class="img-responsive" alt="">
-                        </a>
-                        <h4 class="mt-md mb-none">Amanda Doe</h4>
-                        <p class="mb-none">Health Law</p>
-                        <span class="thumb-info-social-icons mt-sm pb-none">
-										<a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
-                                </span>
-                    </div>
-                    <div class="center mb-lg">
-                        <a href="demo-law-firm-attorneys-detail.html">
-                            <img src="{{ asset('img/team/team-30.jpg') }}" class="img-responsive" alt="">
-                        </a>
-                        <h4 class="mt-md mb-none">Jessica Doe</h4>
-                        <p class="mb-none">Capital Law</p>
-                        <span class="thumb-info-social-icons mt-sm pb-none">
-										<a href="http://www.linkedin.com"><i class="fa fa-linkedin"></i><span>Linkedin</span></a>
-                                </span>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -429,29 +299,29 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="counter mb-lg mt-lg">
                             <i class="icon-user-following icons"></i>
-                            <strong data-to="25000" data-append="+">0</strong>
-                            <label>Happy Clients</label>
+                            <strong data-to="{{ $data['clientessatisfeitos']->extra }}" data-append="+">0</strong>
+                            <label>{{ $data['clientessatisfeitos']->valor }}</label>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="counter mb-lg mt-lg">
                             <i class="icon-diamond icons"></i>
-                            <strong data-to="15">0</strong>
-                            <label>Years in Business</label>
+                            <strong data-to="{{ $data['anosatividade']->extra }}">0</strong>
+                            <label>{{ $data['anosatividade']->valor }}</label>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="counter mb-lg mt-lg">
                             <i class="icon-badge icons"></i>
-                            <strong data-to="3">0</strong>
-                            <label>Awards</label>
+                            <strong data-to="{{ $data['premios']->extra }}">0</strong>
+                            <label>{{ $data['premios']->valor }}</label>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="counter mb-lg mt-lg">
                             <i class="icon-paper-plane icons"></i>
-                            <strong data-to="178">0</strong>
-                            <label>Successful Stories</label>
+                            <strong data-to="{{ $data['historiassucesso']->extra }}">0</strong>
+                            <label>{{ $data['historiassucesso']->valor }}</label>
                         </div>
                     </div>
                 </div>
@@ -471,44 +341,44 @@
         <div class="row mt-xl">
             <div class="col-md-6">
 
-							<span class="thumb-info thumb-info-side-image thumb-info-no-zoom mb-xl">
-								<span class="thumb-info-side-image-wrapper p-none hidden-xs">
-									<a title="" href="demo-law-firm-news-detail.html">
-										<img src="{{ asset('img/demos/law-firm/blog/blog-law-firm-1.jpg') }}" class="img-responsive" alt="" style="width: 195px;">
-									</a>
-								</span>
-								<span class="thumb-info-caption">
-									<span class="thumb-info-caption-text">
-										<h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">Award of Honor</a></h2>
-										<span class="post-meta">
-											<span>January 10, 2017 | <a href="#">John Doe</a></span>
-										</span>
-										<p class="font-size-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-										<a class="mt-md" href="demo-law-firm-news-detail.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-									</span>
-								</span>
-							</span>
+                <span class="thumb-info thumb-info-side-image thumb-info-no-zoom mb-xl">
+                    <span class="thumb-info-side-image-wrapper p-none hidden-xs">
+                        <a title="" href="demo-law-firm-news-detail.html">
+                            <img src="{{ asset('img/demos/law-firm/blog/blog-law-firm-1.jpg') }}" class="img-responsive" alt="" style="width: 195px;">
+                        </a>
+                    </span>
+                    <span class="thumb-info-caption">
+                        <span class="thumb-info-caption-text">
+                            <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">Award of Honor</a></h2>
+                            <span class="post-meta">
+                                <span>January 10, 2017 | <a href="#">John Doe</a></span>
+                            </span>
+                            <p class="font-size-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            <a class="mt-md" href="demo-law-firm-news-detail.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                        </span>
+                    </span>
+                </span>
 
             </div>
             <div class="col-md-6">
 
-							<span class="thumb-info thumb-info-side-image thumb-info-no-zoom mb-xl">
-								<span class="thumb-info-side-image-wrapper p-none hidden-xs">
-									<a title="" href="demo-law-firm-news-detail.html">
-										<img src="{{ asset('img/demos/law-firm/blog/blog-law-firm-2.jpg') }}" class="img-responsive" alt="" style="width: 195px;">
-									</a>
-								</span>
-								<span class="thumb-info-caption">
-									<span class="thumb-info-caption-text">
-										<h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">The Best Lawyer</a></h2>
-										<span class="post-meta">
-											<span>January 10, 2017 | <a href="#">John Doe</a></span>
-										</span>
-										<p class="font-size-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-										<a class="mt-md" href="demo-law-firm-news-detail.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-									</span>
-								</span>
-							</span>
+                <span class="thumb-info thumb-info-side-image thumb-info-no-zoom mb-xl">
+                    <span class="thumb-info-side-image-wrapper p-none hidden-xs">
+                        <a title="" href="demo-law-firm-news-detail.html">
+                            <img src="{{ asset('img/demos/law-firm/blog/blog-law-firm-2.jpg') }}" class="img-responsive" alt="" style="width: 195px;">
+                        </a>
+                    </span>
+                    <span class="thumb-info-caption">
+                        <span class="thumb-info-caption-text">
+                            <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">The Best Lawyer</a></h2>
+                            <span class="post-meta">
+                                <span>January 10, 2017 | <a href="#">John Doe</a></span>
+                            </span>
+                            <p class="font-size-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                            <a class="mt-md" href="demo-law-firm-news-detail.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                        </span>
+                    </span>
+                </span>
 
             </div>
         </div>
