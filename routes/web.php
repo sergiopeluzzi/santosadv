@@ -12,11 +12,14 @@
 */
 
 Route::get('/', 'SiteController@index')->name('site.inicio');
-Route::get('/atuacao', 'SiteController@atuacao')->name('site.atuacao');
-Route::get('/advogados', 'SiteController@advogados')->name('site.advogados');
-Route::get('/noticias', 'SiteController@noticias')->name('site.noticias');
-Route::get('/contato', 'SiteController@contato')->name('site.contato');
 
+Route::get('/atuacao', 'SiteController@atuacao')->name('site.atuacao');
+
+Route::get('/advogados', 'SiteController@advogados')->name('site.advogados');
+
+Route::get('/noticias', 'SiteController@noticias')->name('site.noticias');
+
+Route::get('/contato', 'SiteController@contato')->name('site.contato');
 
 Route::get('/configs', 'ConfigsController@index')->name('configs.index');
 

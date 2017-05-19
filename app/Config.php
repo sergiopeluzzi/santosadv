@@ -8,7 +8,9 @@ class Config extends Model
 {
     protected $fillable = [
         'parametro',
-        'valor'
+        'valor',
+        'extra',
+        'obs'
     ];
 
 }

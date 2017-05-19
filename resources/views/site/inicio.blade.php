@@ -68,41 +68,16 @@
                          style="z-index: 5; font-size: 40px;"
                          data-transform_in="y:[-300%];opacity:0;s:500;">ÁREAS DE ATUAÇÃO</div>
 
-                    <div class="tp-caption tp-caption-overlay-opacity bottom-label"
-                         data-x="right" data-hoffset="100"
-                         data-y="center" data-voffset="-145"
-                         data-start="1500"
-                         data-transform_in="x:[-100%];opacity:0;s:500;"><i class="fa fa-check"></i> Criminal Law</div>
+
+                    @foreach($data['areaatuacao'] as $areaatuacao)
 
                     <div class="tp-caption tp-caption-overlay-opacity bottom-label"
                          data-x="right" data-hoffset="100"
-                         data-y="center" data-voffset="-100"
-                         data-start="1800"
-                         data-transform_in="x:[-100%];opacity:0;s:500;"><i class="fa fa-check"></i> Business Law</div>
+                         data-y="center" data-voffset="{{ $data['voff']+=42 }}"
+                         data-start="{{ $data['dtstart']+=300 }}"
+                         data-transform_in="x:[-100%];opacity:0;s:500;"><i class="fa fa-check"></i> {{ $areaatuacao->extra }}</div>
 
-                    <div class="tp-caption tp-caption-overlay-opacity bottom-label"
-                         data-x="right" data-hoffset="100"
-                         data-y="center" data-voffset="-55"
-                         data-start="2100"
-                         data-transform_in="x:[-100%];opacity:0;s:500;"><i class="fa fa-check"></i> Health Law</div>
-
-                    <div class="tp-caption tp-caption-overlay-opacity bottom-label"
-                         data-x="right" data-hoffset="100"
-                         data-y="center" data-voffset="-10"
-                         data-start="2400"
-                         data-transform_in="x:[-100%];opacity:0;s:500;"><i class="fa fa-check"></i> Divorce Law</div>
-
-                    <div class="tp-caption tp-caption-overlay-opacity bottom-label"
-                         data-x="right" data-hoffset="100"
-                         data-y="center" data-voffset="35"
-                         data-start="2700"
-                         data-transform_in="x:[-100%];opacity:0;s:500;"><i class="fa fa-check"></i> Capital Law</div>
-
-                    <div class="tp-caption tp-caption-overlay-opacity bottom-label"
-                         data-x="right" data-hoffset="100"
-                         data-y="center" data-voffset="80"
-                         data-start="3000"
-                         data-transform_in="x:[-100%];opacity:0;s:500;"><i class="fa fa-check"></i> Accident Law</div>
+                    @endforeach
 
                     <a class="tp-caption btn btn-primary btn-lg"
                        data-hash
@@ -110,7 +85,7 @@
                        href="#practice-areas"
                        data-x="right" data-hoffset="100"
                        data-y="center" data-voffset="150"
-                       data-start="3500"
+                       data-start="3000"
                        data-whitespace="nowrap"
                        data-transform_in="y:[100%];s:500;"
                        data-transform_out="opacity:0;s:500;"
