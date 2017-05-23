@@ -23,3 +23,7 @@ Route::get('/contato', 'SiteController@contato')->name('site.contato');
 
 Route::get('/configs', 'ConfigsController@index')->name('configs.index');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
