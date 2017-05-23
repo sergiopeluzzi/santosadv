@@ -65,7 +65,7 @@
                 <div class="header-row">
                     <div class="header-column">
                         <div class="header-logo">
-                            <a href="demo-law-firm.html">
+                            <a href="{{ route('site.inicio') }}">
                                 <img alt="Porto" width="164" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="{{ asset('img/demos/law-firm/logo-law-firm.png') }}">
                             </a>
                         </div>
@@ -121,11 +121,19 @@
                                     </a>
                                 </li>
                                 @endforeach
+                                @if (!Auth::guest())
                                 <li class="active">
                                     <a href="#">
                                         Área do cliente
                                     </a>
                                 </li>
+                                @else
+                                <li class="active">
+                                    <a href="{{ route('login') }}">
+                                        Entrar
+                                    </a>
+                                </li>
+                                @endif
                             </ul>
                         </nav>
                     </div>
