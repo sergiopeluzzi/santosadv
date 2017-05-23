@@ -13,7 +13,6 @@ class SiteController extends Controller
     public function __construct(Config $config)
     {
         $this->configs = $config;
-
         $configs = $this->configs->all();
 
         $this->data['titulo'] = $configs->where('parametro', 'titulo')->first();
