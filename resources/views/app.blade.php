@@ -122,14 +122,14 @@
                                 </li>
                                 @endforeach
                                 @if (!Auth::guest())
-                                <li class="active">
-                                    <a href="#">
-                                        Área do cliente
+                                <li>
+                                    <a href="{{ Auth::logout() }}">
+                                        Sair
                                     </a>
                                 </li>
                                 @else
                                 <li class="active">
-                                    <a href="{{ route('login') }}">
+                                    <a href="{{ route('configs.index') }}">
                                         Entrar
                                     </a>
                                 </li>

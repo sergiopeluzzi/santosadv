@@ -50,7 +50,6 @@
 <body>
 
 <div class="body">
-
     <header id="header" class="header-no-border-bottom" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 115, 'stickySetTop': '-115px', 'stickyChangeLogo': false}">
         <div class="header-body">
             <div class="header-container container">
@@ -66,7 +65,6 @@
             </div>
         </div>
     </header>
-
     <div role="main" class="main">
         <div class="container">
             <div class="row">
@@ -77,13 +75,13 @@
                                 <div class="featured-box featured-box-primary align-left mt-xlg">
                                     <div class="box-content">
                                         <h4 class="heading-primary text-uppercase mb-md">Faça seu cadastro</h4>
-                                        <form action="/" id="frmSignUp" method="post">
+                                        <form action="{{ route('register') }}" id="frmSignUp" method="post">
                                             {{ csrf_field() }}
                                             <div class="row">
                                                 <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
                                                     <div class="col-md-12">
                                                         <label for="name">Nome Completo</label>
-                                                        <input type="text" id="name" name="name" value="{{ old('name') }}" class="form-control input-lg">
+                                                        <input type="text" id="name" name="name" value="{{ old('name') }}" class="form-control input-lg" required>
                                                         @if ($errors->has('name'))
                                                             <span class="help-block">
                                                                 <strong>{{ $errors->first('name') }}</strong>
@@ -96,7 +94,7 @@
                                                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                                                     <div class="col-md-12">
                                                         <label for="email">Endereço de E-mail</label>
-                                                        <input type="email" id="email" name="email" value="{{ old('email') }}" class="form-control input-lg">
+                                                        <input type="email" id="email" name="email" value="{{ old('email') }}" class="form-control input-lg" required>
                                                         @if ($errors->has('email'))
                                                             <span class="help-block">
                                                                 <strong>{{ $errors->first('email') }}</strong>
@@ -109,7 +107,7 @@
                                                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                                     <div class="col-md-6">
                                                         <label for="password">Senha</label>
-                                                        <input type="password" id="password" name="password" value="{{ old('password') }}" class="form-control input-lg" required>
+                                                        <input type="password" id="password" name="password" class="form-control input-lg" required>
                                                         @if ($errors->has('password'))
                                                             <span class="help-block">
                                                                 <strong>{{ $errors->first('password') }}</strong>
@@ -118,7 +116,7 @@
                                                     </div>
                                                     <div class="col-md-6">
                                                         <label for="password-confirm">Confirme sua senha</label>
-                                                        <input id="password-confirm" name="password-confirmation" type="password"  class="form-control input-lg" required>
+                                                        <input type="password" id="password_confirmation" name="password_confirmation" class="form-control input-lg" required>
                                                     </div>
                                                 </div>
                                             </div>
