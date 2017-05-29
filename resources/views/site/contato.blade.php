@@ -67,8 +67,8 @@
 
                     <ul class="list list-icons list-icons-style-3 mt-xlg mb-xlg">
                         <li><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name</li>
-                        <li><i class="fa fa-phone"></i> <strong>Phone:</strong> (123) 456-789</li>
-                        <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></li>
+                        <li><i class="fa fa-phone"></i> <strong>Phone:</strong> {{ $data['fone']->valor }}</li>
+                        <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:{{ $data['email']->valor }}">{{ $data['email']->valor }}</a></li>
                     </ul>
 
                     <h4 class="pt-xl mb-none">Business Hours</h4>
