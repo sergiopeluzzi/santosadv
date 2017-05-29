@@ -8,13 +8,15 @@
 
     <title>{{ $data['titulo']->valor }}</title>
 
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Responsive HTML5 Template">
-    <meta name="author" content="okler.net">
+    <meta name="keywords" content="Santos Advogados Associados" />
+    <meta name="description" content="Advocacia especializada em Cacoal e região">
+    <meta name="author" content="usetecnologia.com">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
+    <!--<link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" /> -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <!--<link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">-->
+    <link rel="apple-touch-icon" href="#">
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -66,7 +68,7 @@
                     <div class="header-column">
                         <div class="header-logo">
                             <a href="{{ route('site.inicio') }}">
-                                <img alt="Porto" width="164" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="{{ asset('img/demos/law-firm/logo-law-firm.png') }}">
+                                <img alt="Santos ADV Logo" width="164" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="#">
                             </a>
                         </div>
                     </div>
@@ -101,16 +103,6 @@
                     <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
                         Menu <i class="fa fa-bars"></i>
                     </button>
-                    <div class="header-search visible-lg">
-                        <form id="searchForm" action="page-search-results.html" method="get">
-                            <div class="input-group">
-                                <input type="text" class="form-control" name="q" id="q" placeholder="Pesquisar..." required>
-                                <span class="input-group-btn">
-											<button class="btn btn-default" type="submit"><i class="icon-magnifier icons"></i></button>
-										</span>
-                            </div>
-                        </form>
-                    </div>
                     <div class="header-nav-main header-nav-main-light header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
                         <nav>
                             <ul class="nav nav-pills" id="mainNav">
@@ -129,7 +121,7 @@
                                 </li>
                                 @else
                                 <li class="active">
-                                    <a href="{{ route('configs.index') }}">
+                                    <a href="{{ route('login') }}">
                                         Entrar
                                     </a>
                                 </li>
@@ -149,21 +141,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <a href="demo-law-firm.html" class="logo mb-md">
-                        <img alt="Porto Website Template" class="img-responsive" width="97" height="32" src="{{ asset('img/demos/law-firm/logo-law-firm-footer.png') }}">
+                    <a href="#" class="logo mb-md">
+                        <img alt="Santos ADV Logo" class="img-responsive" width="97" height="32" src="#">
                     </a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper, eget sagittis velit venenatis.</p>
                 </div>
                 <div class="col-md-3 col-md-offset-1">
-                    <h5 class="mb-sm">Porto Law Firm</h5>
+                    <h5 class="mb-sm">Santos Advogados Associados</h5>
                     <ul class="list list-icons mt-xl">
-                        <li><i class="fa fa-map-marker"></i> <strong>Address:</strong> 1234 Street Name, City Name, United States</li>
-                        <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></li>
+                        <li><i class="fa fa-map-marker"></i> <strong>Endereço:</strong> {{ $data['email']->valor }}</li>
+                        <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:{{ $data['email']->valor }}"> {{ $data['email']->valor }}</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <h5 class="mb-sm">Toll Free</h5>
-                    <span class="phone">(800) 123-4567</span>
+                    <h5 class="mb-sm">Ligue já</h5>
+                    <span class="phone">{{ $data['fone']->valor }}</span>
                     <ul class="social-icons mt-lg">
                         <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
                         <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
@@ -176,7 +168,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p>© Copyright 2017. All Rights Reserved. | <a href="demo-law-firm-contact-us.html">Contact</a></p>
+                        <p>© Copyright 2017. Todos os direitos reservados. | <a href="#">Contato</a></p>
                     </div>
                 </div>
             </div>

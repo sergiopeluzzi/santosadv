@@ -18,6 +18,7 @@ class SiteController extends Controller
         $this->data['titulo'] = $configs->where('parametro', 'titulo')->first();
         $this->data['email'] = $configs->where('parametro', 'email')->first();
         $this->data['fone'] = $configs->where('parametro', 'fone')->first();
+        $this->data['endereco'] = $configs->where('parametro', 'endereco')->first();
         $this->data['menu'] = $configs->where('parametro', 'menu')->all();
         $this->data['quemsomos'] = $configs->where('parametro', 'quemsomos')->first();
         $this->data['nossocompromisso'] = $configs->where('parametro', 'nossocompromisso')->first();

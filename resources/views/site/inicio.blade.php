@@ -324,7 +324,7 @@
                     </span>
                     <span class="thumb-info-caption">
                         <span class="thumb-info-caption-text">
-                            <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">Award of Honor</a></h2>
+                            <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">Prêmio de Honra</a></h2>
                             <span class="post-meta">
                                 <span>January 10, 2017 | <a href="#">John Doe</a></span>
                             </span>
@@ -345,7 +345,7 @@
                     </span>
                     <span class="thumb-info-caption">
                         <span class="thumb-info-caption-text">
-                            <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">The Best Lawyer</a></h2>
+                            <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">O Melhor Advogado</a></h2>
                             <span class="post-meta">
                                 <span>January 10, 2017 | <a href="#">John Doe</a></span>
                             </span>
@@ -364,7 +364,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-6">
                     <h2 class="mt-xl mb-none">Solicite uma consulta gratuita</h2>
-                    <p>Consult with our experienced team for complete solutions to your legal issues.</p>
+                    <p>Faça uma consulta com a nossa experiente equipe para soluções completas de suas questões legais.</p>
                     <div class="divider divider-primary divider-small mb-xl">
                         <hr>
                     </div>
@@ -395,7 +395,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <input type="submit" value="Send Message" class="btn btn-primary mb-xl" data-loading-text="Carregando...">
+                                <input type="submit" value="Enviar Mensagem" class="btn btn-primary mb-xl" data-loading-text="Carregando...">
 
                                 <div class="alert alert-success hidden" id="contactSuccess">
                                     Sua mensagem foi enviada com sucesso.

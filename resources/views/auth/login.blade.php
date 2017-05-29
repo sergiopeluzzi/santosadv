@@ -13,8 +13,8 @@
     <meta name="author" content="okler.net">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="{{ asset('img/apple-touch-icon.png') }}">
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#">
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -57,7 +57,7 @@
                     <div class="header-column">
                         <div class="header-logo">
                             <a href="{{ route('site.inicio') }}">
-                                <img alt="Porto" width="164" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="{{ asset('img/demos/law-firm/logo-law-firm.png') }}">
+                                <img alt="Santos ADV Logo" width="164" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="#">
                             </a>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                                 <div class="featured-box featured-box-primary align-left mt-xlg">
                                     <div class="box-content">
                                         <h4 class="heading-primary text-uppercase mb-md">Já sou cadastrado</h4>
-                                        <form action="{{ route('login') }}" id="frmSignIn" method="post">
+                                        <form action="{{ route('login') }}" method="post">
                                             {{ csrf_field() }}
                                             <div class="row">
                                                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
