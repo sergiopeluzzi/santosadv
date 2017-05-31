@@ -168,7 +168,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <p>© Copyright 2017. Todos os direitos reservados. | <a href="#">Contato</a></p>
+                        <p>© Copyright 2017. Todos os direitos reservados. | <a href="{{ route('site.contato') }}">Contato</a></p>
                     </div>
                 </div>
             </div>
