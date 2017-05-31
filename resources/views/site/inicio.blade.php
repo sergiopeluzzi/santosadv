@@ -41,7 +41,7 @@
                     <a class="tp-caption btn btn-primary btn-lg"
                        data-hash
                        data-hash-offset="85"
-                       href="#home-intro"
+                       href="#contato"
                        data-x="right" data-hoffset="100"
                        data-y="center" data-voffset="80"
                        data-start="2500"
@@ -185,7 +185,7 @@
                     <div class="feature-box-info ml-md">
                         <h4 class="mb-sm">{{ $area->extra }}</h4>
                         <p>{{ $area->valor }}</p>
-                        <a class="mt-md" href="demo-law-firm-practice-areas-detail.html">Learn More <i class="fa fa-long-arrow-right"></i></a>
+                        <a class="mt-md" href="demo-law-firm-practice-areas-detail.html">Leia Mais <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -318,18 +318,18 @@
 
                 <span class="thumb-info thumb-info-side-image thumb-info-no-zoom mb-xl">
                     <span class="thumb-info-side-image-wrapper p-none hidden-xs">
-                        <a title="" href="demo-law-firm-news-detail.html">
+                        <a title="" href="#">
                             <img src="{{ asset('img/demos/law-firm/blog/blog-law-firm-1.jpg') }}" class="img-responsive" alt="" style="width: 195px;">
                         </a>
                     </span>
                     <span class="thumb-info-caption">
                         <span class="thumb-info-caption-text">
-                            <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">Prêmio de Honra</a></h2>
+                            <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="#">Prêmio de Honra</a></h2>
                             <span class="post-meta">
                                 <span>January 10, 2017 | <a href="#">John Doe</a></span>
                             </span>
                             <p class="font-size-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                            <a class="mt-md" href="demo-law-firm-news-detail.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                            <a class="mt-md" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
                         </span>
                     </span>
                 </span>
@@ -339,18 +339,18 @@
 
                 <span class="thumb-info thumb-info-side-image thumb-info-no-zoom mb-xl">
                     <span class="thumb-info-side-image-wrapper p-none hidden-xs">
-                        <a title="" href="demo-law-firm-news-detail.html">
+                        <a title="" href="#">
                             <img src="{{ asset('img/demos/law-firm/blog/blog-law-firm-2.jpg') }}" class="img-responsive" alt="" style="width: 195px;">
                         </a>
                     </span>
                     <span class="thumb-info-caption">
                         <span class="thumb-info-caption-text">
-                            <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">O Melhor Advogado</a></h2>
+                            <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="#">O Melhor Advogado</a></h2>
                             <span class="post-meta">
                                 <span>January 10, 2017 | <a href="#">John Doe</a></span>
                             </span>
                             <p class="font-size-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                            <a class="mt-md" href="demo-law-firm-news-detail.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                            <a class="mt-md" href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
                         </span>
                     </span>
                 </span>
@@ -359,7 +359,7 @@
         </div>
     </div>
 
-    <section class="section section-background section-footer" style="background-image: url({{ asset('img/demos/law-firm/contact/contact-background.jpg') }}); background-position: 50% 100%;">
+    <section id="contato" class="section section-background section-footer" style="background-image: url({{ asset('img/demos/law-firm/contact/contact-background.jpg') }}); background-position: 50% 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-6">
@@ -368,7 +368,7 @@
                     <div class="divider divider-primary divider-small mb-xl">
                         <hr>
                     </div>
-                    <form id="contactForm" action="php/contact-form.php" method="POST">
+                    <form id="contactForm" action="#" method="POST">
                         <div class="row">
                             <div class="form-group">
                                 <div class="col-sm-6">

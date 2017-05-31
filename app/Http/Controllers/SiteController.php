@@ -35,7 +35,7 @@ class SiteController extends Controller
     public function index()
     {
         $this->data['pag'] = 'Início';
-        $this->data['voff'] = -145;
+        $this->data['voff'] = -155;
         $this->data['dtstart'] = 1200;
 
         return view('site.inicio')->with('data', $this->data);

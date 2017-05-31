@@ -8,7 +8,7 @@
 
                 <div class="col-md-12">
 
-                    <h1 class="mt-xl mb-none">News</h1>
+                    <h1 class="mt-xl mb-none">Notícias</h1>
                     <div class="divider divider-primary divider-small mb-xl">
                         <hr>
                     </div>
@@ -18,18 +18,18 @@
 
                             <span class="thumb-info thumb-info-side-image thumb-info-no-zoom mt-xl">
                                 <span class="thumb-info-side-image-wrapper p-none hidden-xs">
-                                    <a title="" href="demo-law-firm-news-detail.html">
+                                    <a title="" href="#">
                                         <img src="img/demos/law-firm/blog/blog-law-firm-1.jpg" class="img-responsive" alt="" style="width: 195px;">
                                     </a>
                                 </span>
                                 <span class="thumb-info-caption">
                                     <span class="thumb-info-caption-text">
-                                        <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">Award of Honor</a></h2>
+                                        <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="#">Prêmios de honra</a></h2>
                                         <span class="post-meta">
-                                            <span>January 10, 2017 | <a href="#">John Doe</a></span>
+                                            <span>25 de Junho, 2017 | <a href="#">Sergio Peluzzi</a></span>
                                         </span>
                                         <p class="font-size-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                        <a class="mt-md" href="demo-law-firm-news-detail.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        <a class="mt-md" href="#">Leia Mais <i class="fa fa-long-arrow-right"></i></a>
                                     </span>
                                 </span>
                             </span>
@@ -41,18 +41,18 @@
 
                             <span class="thumb-info thumb-info-side-image thumb-info-no-zoom mt-xl">
                                 <span class="thumb-info-side-image-wrapper p-none hidden-xs">
-                                    <a title="" href="demo-law-firm-news-detail.html">
+                                    <a title="" href="#">
                                         <img src="img/demos/law-firm/blog/blog-law-firm-2.jpg" class="img-responsive" alt="" style="width: 195px;">
                                     </a>
                                 </span>
                                 <span class="thumb-info-caption">
                                     <span class="thumb-info-caption-text">
-                                        <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="demo-law-firm-news-detail.html">The Best Lawyer</a></h2>
+                                        <h2 class="mb-md mt-xs"><a title="" class="text-dark" href="#">O melhor advogado</a></h2>
                                         <span class="post-meta">
-                                            <span>January 10, 2017 | <a href="#">John Doe</a></span>
+                                            <span>23 de Maio, 2017 | <a href="#">Glaubert Dumpierre</a></span>
                                         </span>
                                         <p class="font-size-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                        <a class="mt-md" href="demo-law-firm-news-detail.html">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        <a class="mt-md" href="#">Leia Mais <i class="fa fa-long-arrow-right"></i></a>
                                     </span>
                                 </span>
                             </span>
