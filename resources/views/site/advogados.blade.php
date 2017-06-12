@@ -21,7 +21,7 @@
                                 <a href="#">
 											<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 												<span class="thumb-info-wrapper">
-													<img src="img/team/team-22.jpg" class="img-responsive" alt="">
+													<img src="{{ asset('img/team/team-24.jpg') }}" class="img-responsive" alt="">
 													<span class="thumb-info-title">
 														<span class="thumb-info-inner">Detalhes...</span>
 													</span>

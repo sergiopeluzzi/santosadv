@@ -1,6 +1,8 @@
 /* Header */
 #header .header-logo img {
 	margin-top: 5px;
+	width: 200px;
+	height: auto;
 }
 #header .header-body {
 	padding: 0;
