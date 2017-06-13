@@ -5,8 +5,7 @@
     <div class="slider-container rev_slider_wrapper" style="height: 650px;">
         <div id="revolutionSlider" class="slider rev_slider manual">
             <ul>
-                <li data-transition="fade" data-title="Santos Adv" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-1.jpg') }}">
-
+                <li data-transition="fade" data-title="Santos Advogados" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-1.jpg') }}">
                     <img src="{{ asset('img/demos/law-firm/slides/slide-law-firm-1.jpg') }}"
                          alt=""
                          data-bgposition="center center"
@@ -52,8 +51,7 @@
                        data-mask_in="x:0px;y:0px;">Solicite uma consulta</a>
 
                 </li>
-                <li data-transition="fade" data-title="Área de Atuação" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-2-thumb.jpg') }}">
-
+                <li data-transition="fade" data-title="Áreas de Atuação" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-2-thumb.jpg') }}">
                     <img src="{{ asset('img/demos/law-firm/slides/slide-law-firm-2.jpg') }}"
                          alt=""
                          data-bgposition="center center"
@@ -93,8 +91,7 @@
                        data-mask_in="x:0px;y:0px;">Saiba Mais <i class="fa fa-long-arrow-right"></i></a>
 
                 </li>
-                <li data-transition="fade" data-title="Boas vindas" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-3.jpg') }}">
-
+                <li data-transition="fade" data-title="Seja Bem-vindo" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-3.jpg') }}">
                     <img src="{{ asset('img/demos/law-firm/slides/slide-law-firm-3.jpg') }}"
                          alt=""
                          data-bgposition="center center"
@@ -151,7 +148,7 @@
                     </div>
                     <p class="mt-lg">{{ $data['quemsomos']->valor }}</p>
 
-                    <a class="mt-md" href="demo-law-firm-about-us.html">Learn More <i class="fa fa-long-arrow-right"></i></a>
+                    <a class="mt-md" href="#">Learn More <i class="fa fa-long-arrow-right"></i></a>
                 </div>
                 <div class="col-md-4 col-md-offset-1">
                     <h4 class="mt-xl mb-none">Nosso Compromisso</h4>
@@ -180,12 +177,12 @@
             <div class="col-md-4">
                 <div class="feature-box feature-box-style-2 mb-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
                     <div class="feature-box-icon">
-                        <img src="{{ asset('img/demos/law-firm/icons/criminal-law.png') }}" alt="" />
+                        <img src="{{ asset('img/demos/law-firm/icons/business-law.png') }}" alt="" />
                     </div>
                     <div class="feature-box-info ml-md">
                         <h4 class="mb-sm">{{ $area->extra }}</h4>
                         <p>{{ $area->valor }}</p>
-                        <a class="mt-md" href="demo-law-firm-practice-areas-detail.html">Leia Mais <i class="fa fa-long-arrow-right"></i></a>
+                        <a class="mt-md" href="#">Leia Mais <i class="fa fa-long-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -249,8 +246,8 @@
                     @foreach($data['advogado'] as $advogado)
 
                     <div class="center mb-lg">
-                        <a href="demo-law-firm-attorneys-detail.html">
-                            <img src="{{ asset('img/team/team-22.jpg') }}" class="img-responsive" alt="">
+                        <a href="#">
+                            <img src="{{ asset('img/team/team-24.jpg') }}" class="img-responsive" alt="">
                         </a>
                         <h4 class="mt-md mb-none">{{ $advogado->valor }}</h4>
                         <p class="mb-none">{{ $advogado->extra }}</p>

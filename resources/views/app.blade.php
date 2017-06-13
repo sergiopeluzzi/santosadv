@@ -68,7 +68,7 @@
                     <div class="header-column">
                         <div class="header-logo">
                             <a href="{{ route('site.inicio') }}">
-                                <img alt="Santos ADV Logo" width="164" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="#">
+                                <img alt="Santos ADV Logo" width="164" height="54" data-sticky-width="82" data-sticky-height="40" data-sticky-top="33" src="{{ asset('img/demos/law-firm/logo-law-firm.png') }}">
                             </a>
                         </div>
                     </div>
@@ -141,8 +141,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <a href="#" class="logo mb-md">
-                        <img alt="Santos ADV Logo" class="img-responsive" width="97" height="32" src="#">
+                    <a href="{{ route('site.inicio') }}" class="logo mb-md">
+                        <img alt="Santos ADV Logo" class="img-responsive" width="180" height="auto" src="{{ asset('img/demos/law-firm/logo-law-firm-footer.png') }}">
                     </a>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper, eget sagittis velit venenatis.</p>
                 </div>
