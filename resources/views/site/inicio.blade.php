@@ -5,7 +5,7 @@
     <div class="slider-container rev_slider_wrapper" style="height: 650px;">
         <div id="revolutionSlider" class="slider rev_slider manual">
             <ul>
-                <li data-transition="fade" data-title="Advocate Team" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-1.jpg') }}">
+                <li data-transition="fade" data-title="Santos Adv" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-1.jpg') }}">
 
                     <img src="{{ asset('img/demos/law-firm/slides/slide-law-firm-1.jpg') }}"
                          alt=""
@@ -52,7 +52,7 @@
                        data-mask_in="x:0px;y:0px;">Solicite uma consulta</a>
 
                 </li>
-                <li data-transition="fade" data-title="Practice Areas" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-2-thumb.jpg') }}">
+                <li data-transition="fade" data-title="Área de Atuação" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-2-thumb.jpg') }}">
 
                     <img src="{{ asset('img/demos/law-firm/slides/slide-law-firm-2.jpg') }}"
                          alt=""
@@ -93,7 +93,7 @@
                        data-mask_in="x:0px;y:0px;">Saiba Mais <i class="fa fa-long-arrow-right"></i></a>
 
                 </li>
-                <li data-transition="fade" data-title="Welcome to Porto" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-3.jpg') }}">
+                <li data-transition="fade" data-title="Boas vindas" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-3.jpg') }}">
 
                     <img src="{{ asset('img/demos/law-firm/slides/slide-law-firm-3.jpg') }}"
                          alt=""
