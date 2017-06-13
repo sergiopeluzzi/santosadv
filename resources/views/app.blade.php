@@ -149,7 +149,7 @@
                 <div class="col-md-3 col-md-offset-1">
                     <h5 class="mb-sm">Santos Advogados Associados</h5>
                     <ul class="list list-icons mt-xl">
-                        <li><i class="fa fa-map-marker"></i> <strong>Endereço:</strong> {{ $data['email']->valor }}</li>
+                        <li><i class="fa fa-map-marker"></i> <strong>Endereço:</strong> {{ $data['endereco']->valor }}</li>
                         <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:{{ $data['email']->valor }}"> {{ $data['email']->valor }}</a></li>
                     </ul>
                 </div>

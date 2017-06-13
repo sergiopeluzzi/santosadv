@@ -6,7 +6,6 @@
         <div id="revolutionSlider" class="slider rev_slider manual">
             <ul>
                 <li data-transition="fade" data-title="Santos Advogados" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-1.jpg') }}">
-
                     <img src="{{ asset('img/demos/law-firm/slides/slide-law-firm-1.jpg') }}"
                          alt=""
                          data-bgposition="center center"
@@ -53,7 +52,6 @@
 
                 </li>
                 <li data-transition="fade" data-title="Áreas de Atuação" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-2-thumb.jpg') }}">
-
                     <img src="{{ asset('img/demos/law-firm/slides/slide-law-firm-2.jpg') }}"
                          alt=""
                          data-bgposition="center center"
@@ -94,7 +92,6 @@
 
                 </li>
                 <li data-transition="fade" data-title="Seja Bem-vindo" data-thumb="{{ asset('img/demos/law-firm/slides/slide-law-firm-3.jpg') }}">
-
                     <img src="{{ asset('img/demos/law-firm/slides/slide-law-firm-3.jpg') }}"
                          alt=""
                          data-bgposition="center center"
